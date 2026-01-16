@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Real Estate 1",
+    "price": "47,043",
+    "detail": "Real Estate Details are needed here",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Real Estate 2",
+    "price": "66,353",
+    "detail": "Real Estate Details are needed here",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Real Estate 3",
+    "price": "35,853",
+    "detail": "Real Estate Details are needed here",
+    "image": "./r3.png"
+  },
+  {
+    "name": "Real Estate 4",
+    "price": "47,043",
+    "detail": "Real Estate Details are needed here",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Real Estate 5",
+    "price": "66,353",
+    "detail": "Real Estate Details are needed here",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Real Estate 6",
+    "price": "35,853",
+    "detail": "Real Estate Details are needed here",
+    "image": "./r3.png"
+  }
+]
