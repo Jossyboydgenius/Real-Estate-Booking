@@ -34,3 +34,24 @@ model Residency {
 
     @@unique(fields: [address, userEmail])
 }
+
+enum PaymentStatus {
+    PENDING
+    COMPLETED
+    FAILED
+    REFUNDED
+}
+
+model Payment {
+    id              String        @id @default(auto()) @map("_id") @db.ObjectId
+    propertyId      String        @db.ObjectId
+    userId          String        
+    amount          Int
+    currency        String        @default("USD")
+    status          PaymentStatus @default(PENDING)
+    paymentIntentId String?       @unique
+    createdAt       DateTime      @default(now())
+    updatedAt       DateTime      @updatedAt
+
+    @@unique(fields: [propertyId, userId])
+}

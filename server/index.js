@@ -5,6 +5,7 @@ const cors = require("cors");
 
 const { userRoute } = require("./routes/userRoute.js");
 const { residencyRoute } = require("./routes/residencyRoute.js");
+const { paymentRoute } = require("./routes/paymentRoute.js");
 
 dotenv.config();
 
@@ -19,6 +20,7 @@ app.use(cors());
 // Routes
 app.use("/api/user", userRoute);
 app.use("/api/residency", residencyRoute);
+app.use("/api/payments", paymentRoute);
 
 // Start server
 app.listen(PORT, () => {

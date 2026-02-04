@@ -1,0 +1,24 @@
+{
+  "name": "real-estate-booking",
+  "version": "1.0.0",
+  "description": "Real Estate Booking System with payment integration",
+  "scripts": {
+    "dev": "./start.dev.sh",
+    "start:dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "prisma:generate": "cd server && npx prisma generate",
+    "prisma:push": "cd server && npx prisma db push"
+  },
+  "keywords": [
+    "real-estate",
+    "booking",
+    "payment"
+  ],
+  "author": "Joseph Awe (Jossyboydgenius)",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
