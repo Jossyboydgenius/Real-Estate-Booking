@@ -1,4 +1,4 @@
-# Real Estate Web App
+# Real Estate Web Application 
 
 This is a modern real estate web application built with the MERN (MongoDB, Express.js, React, Node.js) stack. 
 
